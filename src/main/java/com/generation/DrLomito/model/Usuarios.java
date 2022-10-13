@@ -22,7 +22,7 @@ public class Usuarios {
 	private String usuario_contrasena;
 	@Column (name="veterinario_urlimagen")
 	private String veterinario_url_imagen;
-	@Column(name="tipo_usuario_tipo_usuario_id")
+	@Column(name="tipo_usuario_tipo_usuario_id", nullable = false)
 	private Long tipo_usuario_id;
 	
 	
@@ -79,8 +79,8 @@ public class Usuarios {
 		return tipo_usuario_id;
 	}//getIdTipoDeUsuario
 	
-	public Long setTipo_usuario_id(Long tipo_usuario_id) {
-		return tipo_usuario_id;
+	public void setTipo_usuario_id(Long tipo_usuario_id) {
+		this.tipo_usuario_id = tipo_usuario_id;
 	}//setTipo
 
 	@Override
