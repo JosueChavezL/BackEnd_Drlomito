@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generation.DrLomito.service.TipoUsuarioService;
 
 @RestController
-@RequestMapping(path="/api/tiposusuario/")
+@RequestMapping(path="/api/tiposusuario")
 public class TipoUsuarioController {
 
 	private final TipoUsuarioService tipoUsuarioService;
